@@ -55,16 +55,18 @@ extension UIView {
     
     public func pin(
         to superview: UIView,
-        horizontal: CGFloat = 0,
-        vertical: CGFloat = 0
+        horizontal: CGFloat? = nil,
+        vertical: CGFloat? = nil
     ) {
         self.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            self.topAnchor.constraint(equalTo: superview.topAnchor, constant: vertical),
-            self.leadingAnchor.constraint(equalTo: superview.leadingAnchor, constant: horizontal),
-            self.trailingAnchor.constraint(equalTo: superview.trailingAnchor, constant: -horizontal),
-            self.bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: -vertical)
-        ])
+        if let horizontal = horizontal {
+            self.leadingAnchor.constraint(equalTo: superview.leadingAnchor, constant: horizontal).isActive = true
+            self.trailingAnchor.constraint(equalTo: superview.trailingAnchor, constant: -horizontal).isActive = true
+        }
+        if let vertical = vertical {
+            self.topAnchor.constraint(equalTo: superview.topAnchor, constant: vertical).isActive = true
+            self.bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: -vertical).isActive = true
+        }
     }
     
     public func pin(

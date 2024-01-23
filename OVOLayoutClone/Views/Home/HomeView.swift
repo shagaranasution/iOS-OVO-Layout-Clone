@@ -31,6 +31,8 @@ final class HomeView: UIView {
         return tableView
     }()
     
+    private lazy var headerView = HomeHeaderView()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = UIColor.blueSmoked
@@ -81,14 +83,11 @@ extension HomeView: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView()
-        headerView.backgroundColor = .blueSmoked
-        
         return headerView
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 200
+        return headerView.customHeight
     }
     
 }

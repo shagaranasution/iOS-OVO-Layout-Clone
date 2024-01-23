@@ -11,11 +11,14 @@ final class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
         setUpTabBar()
     }
     
     private func setUpTabBar() {
+        tabBar.isTranslucent = false
+        tabBar.barTintColor = .white
+        tabBar.backgroundColor = .white
+        
         let homeVC = HomeViewController()
         let financeVC = FinanceViewController()
         let paymentVC = PaymentViewController()
