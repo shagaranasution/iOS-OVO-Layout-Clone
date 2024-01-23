@@ -1,0 +1,164 @@
+[
+    {
+        "id": 0001,
+        "name": "Pulsa/Paket Data",
+        "category": "favorite",
+        "image": ""
+    },
+    {
+        "id": 0002,
+        "name": "PLN",
+        "category": "favorite",
+        "image": ""
+    },
+    {
+        "id": 0003,
+        "name": "AIR PDAM",
+        "category": "favorite",
+        "image": ""
+    },
+    {
+        "id": 0004,
+        "name": "Pascabayar",
+        "category": "favorite",
+        "image": ""
+    },
+    {
+        "id": 0005,
+        "name": "BPJS Kesehatan",
+        "category": "favorite",
+        "image": ""
+    },
+    {
+        "id": 0006,
+        "name": "Internet & TV Kabel",
+        "category": "favorite",
+        "image": ""
+    },
+    {
+        "id": 0007,
+        "name": "Angsuran Kredit",
+        "category": "favorite",
+        "image": ""
+    },
+    {
+        "id": 0008,
+        "name": "Uang Elektronik",
+        "category": "favorite",
+        "image": ""
+    },
+    {
+        "id": 0009,
+        "name": "Telkom",
+        "category": "other",
+        "image": ""
+    },
+    {
+        "id": 0010,
+        "name": "Iuran Lingkungan",
+        "category": "other",
+        "image": ""
+    },
+    {
+        "id": 0011,
+        "name": "Penerimaann Negara",
+        "category": "other",
+        "image": ""
+    },
+    {
+        "id": 0012,
+        "name": "Pendidikan",
+        "category": "other",
+        "image": ""
+    },
+    {
+        "id": 0013,
+        "name": "Pajak PBB",
+        "category": "other",
+        "image": ""
+    },
+    {
+        "id": 0014,
+        "name": "Retribusi",
+        "category": "other",
+        "image": ""
+    },
+    {
+        "id": 0015,
+        "name": "eSamsat",
+        "category": "other",
+        "image": ""
+    },
+    {
+        "id": 0016,
+        "name": "Lainnya",
+        "category": "other",
+        "image": ""
+    },
+    {
+        "id": 0017,
+        "name": "Food",
+        "category": "grab",
+        "image": ""
+    },
+    {
+        "id": 0018,
+        "name": "Bike",
+        "category": "grab",
+        "image": ""
+    },
+    {
+        "id": 0019,
+        "name": "Car",
+        "category": "grab",
+        "image": ""
+    },
+    {
+        "id": 0020,
+        "name": "Mart",
+        "category": "grab",
+        "image": ""
+    },
+    {
+        "id": 0021,
+        "name": "Express",
+        "category": "grab",
+        "image": ""
+    },
+    {
+        "id": 0022,
+        "name": "Packages",
+        "category": "grab",
+        "image": ""
+    },
+    {
+        "id": 0023,
+        "name": "Offers",
+        "category": "grab",
+        "image": ""
+    },
+    {
+        "id": 0024,
+        "name": "Semua",
+        "category": "grab",
+        "image": ""
+    },
+    {
+        "id": 0025,
+        "name": "U Card",
+        "category": "financial",
+        "image": ""
+    },
+    {
+        "id": 0026,
+        "name": "Proteksi",
+        "category": "financial",
+        "image": ""
+    },
+    {
+        "id": 0027,
+        "name": "Invest",
+        "category": "financial",
+        "image": ""
+    }
+]
