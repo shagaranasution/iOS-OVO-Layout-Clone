@@ -14,6 +14,7 @@ final class HomeProductServiceTabCell: UICollectionViewCell {
     private lazy var label: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 12, weight: .semibold)
+        label.textColor = .purpleOVOMain
         label.clipsToBounds = true
         
         return label

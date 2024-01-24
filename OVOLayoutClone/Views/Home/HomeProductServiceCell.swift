@@ -48,6 +48,7 @@ final class HomeProductServiceCell: UICollectionViewCell {
     private lazy var label: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 12, weight: .regular)
+        label.textColor = .black
         label.textAlignment = .center
         label.numberOfLines = 2
         label.translatesAutoresizingMaskIntoConstraints = false

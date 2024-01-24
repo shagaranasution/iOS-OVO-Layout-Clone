@@ -34,6 +34,7 @@ final class HomeProductServicesSectionCell: UITableViewCell {
             frame: .zero,
             collectionViewLayout: layout
         )
+        collectionView.backgroundColor = .white
         collectionView.isScrollEnabled = false
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -59,6 +60,7 @@ final class HomeProductServicesSectionCell: UITableViewCell {
             frame: .zero,
             collectionViewLayout: layout
         )
+        collectionView.backgroundColor = .white
         collectionView.isPagingEnabled = true
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
@@ -76,6 +78,7 @@ final class HomeProductServicesSectionCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         clipsToBounds = true
+        contentView.backgroundColor = .white
         contentView.addSubviews(
             tabCollectionView,
             bodyCollectionView

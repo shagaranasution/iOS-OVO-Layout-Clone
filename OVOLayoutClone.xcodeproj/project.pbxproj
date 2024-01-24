@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FF3674892B5B764E00C78375 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3674882B5B764E00C78375 /* ProductService.swift */; };
+		FF46C7D12B5F65D1007BD415 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46C7D02B5F65D1007BD415 /* HomeHeaderView.swift */; };
+		FF46C7D32B5FA4A0007BD415 /* HomeHeaderMenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46C7D22B5FA4A0007BD415 /* HomeHeaderMenuItemView.swift */; };
 		FF5239792B5E12F500A64AB8 /* HomeProductServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5239782B5E12F500A64AB8 /* HomeProductServiceCell.swift */; };
 		FF52397B2B5E42D100A64AB8 /* HomeProductServiceTabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF52397A2B5E42D100A64AB8 /* HomeProductServiceTabCell.swift */; };
 		FF8E2F632B5B824F00F880CE /* HomeBodyContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8E2F622B5B824F00F880CE /* HomeBodyContainerCell.swift */; };
@@ -34,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		FF3674882B5B764E00C78375 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		FF46C7D02B5F65D1007BD415 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		FF46C7D22B5FA4A0007BD415 /* HomeHeaderMenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderMenuItemView.swift; sourceTree = "<group>"; };
 		FF5239782B5E12F500A64AB8 /* HomeProductServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductServiceCell.swift; sourceTree = "<group>"; };
 		FF52397A2B5E42D100A64AB8 /* HomeProductServiceTabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductServiceTabCell.swift; sourceTree = "<group>"; };
 		FF8E2F622B5B824F00F880CE /* HomeBodyContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBodyContainerCell.swift; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				FFBE32472B57B8F7005618B0 /* HomeView.swift */,
+				FF46C7D02B5F65D1007BD415 /* HomeHeaderView.swift */,
+				FF46C7D22B5FA4A0007BD415 /* HomeHeaderMenuItemView.swift */,
 				FF8E2F622B5B824F00F880CE /* HomeBodyContainerCell.swift */,
 				FF8E2F642B5B82CD00F880CE /* HomeProductServicesSectionCell.swift */,
 				FF52397A2B5E42D100A64AB8 /* HomeProductServiceTabCell.swift */,
@@ -245,10 +251,12 @@
 				FF3674892B5B764E00C78375 /* ProductService.swift in Sources */,
 				FF90742B2B5B9CBD0046985D /* Service.swift in Sources */,
 				FF8E2F6D2B5B850400F880CE /* HomeSuggestionsSectionCell.swift in Sources */,
+				FF46C7D32B5FA4A0007BD415 /* HomeHeaderMenuItemView.swift in Sources */,
 				FFBE323D2B57AED4005618B0 /* FinanceViewController.swift in Sources */,
 				FFBE324B2B57C538005618B0 /* Extensions.swift in Sources */,
 				FF8E2F632B5B824F00F880CE /* HomeBodyContainerCell.swift in Sources */,
 				FF8E2F652B5B82CD00F880CE /* HomeProductServicesSectionCell.swift in Sources */,
+				FF46C7D12B5F65D1007BD415 /* HomeHeaderView.swift in Sources */,
 				FF8E2F692B5B848700F880CE /* HomeRecommendationsSectionCell.swift in Sources */,
 				FFBE323F2B57AF34005618B0 /* PaymentViewController.swift in Sources */,
 				FFBE32432B57AF70005618B0 /* ProfileViewController.swift in Sources */,
