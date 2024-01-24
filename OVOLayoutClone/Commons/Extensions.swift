@@ -102,6 +102,8 @@ extension UIColor {
     public static let ovoBackground = UIColor(r: 255, g: 255, b: 255, a: 1)
     public static let ovoSecondaryBackground = UIColor(r: 240, g: 240, b: 240, a: 1)
     
+    public static let unselectedItemTint = UIColor(r: 150, g: 150, b: 150, a: 1)
+    
     public static let purpleOVOMain = UIColor(r: 76, g: 0, b: 126, a: 1)
     public static let purpleOVOMain01 = UIColor(r: 76, g: 0, b: 126, a: 0.1)
 

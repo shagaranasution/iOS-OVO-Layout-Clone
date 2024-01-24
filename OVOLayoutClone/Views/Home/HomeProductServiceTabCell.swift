@@ -24,7 +24,6 @@ final class HomeProductServiceTabCell: UICollectionViewCell {
         super.init(frame: frame)
         contentView.backgroundColor = .ovoSecondaryBackground
         contentView.addSubview(label)
-        contentView.layer.masksToBounds = true
         contentView.layer.cornerRadius = 14
         addConstraints()
     }
@@ -37,8 +36,25 @@ final class HomeProductServiceTabCell: UICollectionViewCell {
         label.pin(to: contentView, horizontal: 16, vertical: 8)
     }
     
-    public func configure(with title: String) {
-        label.text = title
+    public func configure(withCategory category: String, isSelected: Bool) {
+        label.text = category
+        if isSelected {
+            onSelectedCell()
+        } else {
+            onUnselectedCell()
+        }
+    }
+    
+    public func onSelectedCell() {
+        contentView.backgroundColor = .ovoSecondaryBackground
+        contentView.layer.cornerRadius = 14
+        label.textColor = .purpleOVOMain
+    }
+    
+    public func onUnselectedCell() {
+        contentView.backgroundColor = .clear
+        contentView.isOpaque = true
+        label.textColor = .unselectedItemTint
     }
     
 }
