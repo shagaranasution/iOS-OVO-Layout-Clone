@@ -19,17 +19,23 @@ final class HomeHeaderView: UIView {
         view.backgroundColor = .white
         view.clipsToBounds = true
         view.layer.cornerRadius = 16
-        view.layer.masksToBounds = true
+        view.layer.masksToBounds = false
         view.translatesAutoresizingMaskIntoConstraints = false
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = CGRect(
             x: 0,
             y: 0,
             width: UIScreen.main.bounds.size.width - 32,
-            height: 200 - 32
+            height: customHeight - 32
         )
+        gradientLayer.cornerRadius = 16
         gradientLayer.colors = [UIColor.purpleOVOMain.cgColor, UIColor.systemTeal.cgColor]
         view.layer.addSublayer(gradientLayer)
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOpacity = 0.2
+        view.layer.shadowOffset = CGSize(width: 0, height: 10)
+        view.layer.shadowRadius = 10
+        view.layer.shouldRasterize = true
         
         return view
     }()
@@ -114,10 +120,12 @@ final class HomeHeaderView: UIView {
         let view = UIStackView()
         view.axis = .horizontal
         view.distribution = .equalSpacing
-        view.addArrangedSubview(topUpMenuItemView)
-        view.addArrangedSubview(transferMenuItemView)
-        view.addArrangedSubview(withdrawalMenuItemView)
-        view.addArrangedSubview(historyMenuItemView)
+        view.addArrangedSubviews(
+            topUpMenuItemView,
+            transferMenuItemView,
+            withdrawalMenuItemView,
+            historyMenuItemView
+        )
         view.translatesAutoresizingMaskIntoConstraints = false
         
         return view
