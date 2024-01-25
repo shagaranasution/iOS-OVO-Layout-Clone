@@ -19,8 +19,9 @@ final class HomeProductServicesSectionCell: UITableViewCell {
         "Financial"
     ]
     private var screenWidth: CGFloat {
-        UIScreen.main.bounds.size.width
+        return UIScreen.main.bounds.size.width
     }
+    private var currentSelectedIndex: Int = 0
     
     // MARK: - UI
     
@@ -63,7 +64,7 @@ final class HomeProductServicesSectionCell: UITableViewCell {
         collectionView.backgroundColor = .white
         collectionView.isPagingEnabled = true
         collectionView.showsHorizontalScrollIndicator = false
-        collectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 100)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.register(
             HomeProductServiceCell.self,
@@ -105,6 +106,32 @@ final class HomeProductServicesSectionCell: UITableViewCell {
         ])
     }
     
+    private func moveToTab(at index: Int) {
+        tabCollectionView.scrollToItem(
+            at: IndexPath(item: index, section: 0),
+            at: .centeredHorizontally,
+            animated: true
+        )
+        tabCollectionView.visibleCells.enumerated().forEach { (cellIndex, cell) in
+            if let cell = cell as? HomeProductServiceTabCell {
+                if index == cellIndex {
+                    cell.onSelectedCell()
+                } else {
+                    cell.onUnselectedCell()
+                }
+            }
+        }
+        currentSelectedIndex = index
+    }
+    
+    private func moveToBody(of category: String) {
+        guard let index = categories.firstIndex(of: category) else { return }
+        UIView.animate(withDuration: 0.2) { [weak self] in
+            guard let self = self else { return }
+            self.bodyCollectionView.contentOffset.x = -16 * (CGFloat(index) + 1) + (CGFloat(index) * self.bodyCollectionView.frame.size.width)
+        }
+    }
+    
 }
 
 extension HomeProductServicesSectionCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
@@ -131,7 +158,10 @@ extension HomeProductServicesSectionCell: UICollectionViewDataSource, UICollecti
             else {
                 return UICollectionViewCell()
             }
-            cell.configure(with: categories[indexPath.item])
+            cell.configure(
+                withCategory: categories[indexPath.item],
+                isSelected: indexPath.item == currentSelectedIndex
+            )
             
             return cell
         case bodyCollectionView:
@@ -151,12 +181,20 @@ extension HomeProductServicesSectionCell: UICollectionViewDataSource, UICollecti
         }
     }
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: (collectionView.frame.size.width - (16*2) - (8*3)) / 4 , height: 80)
-//    }
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 8
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard collectionView == tabCollectionView else { return }
+        moveToTab(at: indexPath.item)
+        moveToBody(of: categories[indexPath.item])
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let index = Int(round(scrollView.contentOffset.x / bodyCollectionView.frame.size.width))
+        moveToTab(at: index)
+        moveToBody(of: categories[index])
     }
     
 }
