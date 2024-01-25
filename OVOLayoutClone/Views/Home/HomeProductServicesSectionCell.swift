@@ -64,7 +64,7 @@ final class HomeProductServicesSectionCell: UITableViewCell {
         collectionView.backgroundColor = .white
         collectionView.isPagingEnabled = true
         collectionView.showsHorizontalScrollIndicator = false
-        collectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 200)
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 100)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.register(
             HomeProductServiceCell.self,
@@ -192,9 +192,9 @@ extension HomeProductServicesSectionCell: UICollectionViewDataSource, UICollecti
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        let pageIndex = Int(round(scrollView.contentOffset.x / bodyCollectionView.frame.size.width))
-        moveToTab(at: pageIndex)
-        moveToBody(of: categories[pageIndex])
+        let index = Int(round(scrollView.contentOffset.x / bodyCollectionView.frame.size.width))
+        moveToTab(at: index)
+        moveToBody(of: categories[index])
     }
     
 }
