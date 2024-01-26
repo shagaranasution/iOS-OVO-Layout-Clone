@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FF3674892B5B764E00C78375 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3674882B5B764E00C78375 /* ProductService.swift */; };
+		FF375E672B624C6800780030 /* HomeCarouselBodyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF375E662B624C6800780030 /* HomeCarouselBodyCell.swift */; };
+		FF375E692B62501800780030 /* HomeCarouselIndicatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF375E682B62501800780030 /* HomeCarouselIndicatorCell.swift */; };
 		FF46C7D12B5F65D1007BD415 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46C7D02B5F65D1007BD415 /* HomeHeaderView.swift */; };
 		FF46C7D32B5FA4A0007BD415 /* HomeHeaderMenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46C7D22B5FA4A0007BD415 /* HomeHeaderMenuItemView.swift */; };
 		FF5239792B5E12F500A64AB8 /* HomeProductServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5239782B5E12F500A64AB8 /* HomeProductServiceCell.swift */; };
@@ -32,10 +34,13 @@
 		FFBE32452B57AFB4005618B0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBE32442B57AFB4005618B0 /* TabBarViewController.swift */; };
 		FFBE32482B57B8F8005618B0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBE32472B57B8F7005618B0 /* HomeView.swift */; };
 		FFBE324B2B57C538005618B0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBE324A2B57C538005618B0 /* Extensions.swift */; };
+		FFE2677E2B638375004DB43B /* CustomCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE2677D2B638375004DB43B /* CustomCollectionViewFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FF3674882B5B764E00C78375 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		FF375E662B624C6800780030 /* HomeCarouselBodyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCarouselBodyCell.swift; sourceTree = "<group>"; };
+		FF375E682B62501800780030 /* HomeCarouselIndicatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCarouselIndicatorCell.swift; sourceTree = "<group>"; };
 		FF46C7D02B5F65D1007BD415 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		FF46C7D22B5FA4A0007BD415 /* HomeHeaderMenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderMenuItemView.swift; sourceTree = "<group>"; };
 		FF5239782B5E12F500A64AB8 /* HomeProductServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductServiceCell.swift; sourceTree = "<group>"; };
@@ -62,6 +67,7 @@
 		FFBE32442B57AFB4005618B0 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		FFBE32472B57B8F7005618B0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FFBE324A2B57C538005618B0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FFE2677D2B638375004DB43B /* CustomCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,8 @@
 				FF52397A2B5E42D100A64AB8 /* HomeProductServiceTabCell.swift */,
 				FF5239782B5E12F500A64AB8 /* HomeProductServiceCell.swift */,
 				FF8E2F662B5B83ED00F880CE /* HomeBannersSectionCell.swift */,
+				FF375E662B624C6800780030 /* HomeCarouselBodyCell.swift */,
+				FF375E682B62501800780030 /* HomeCarouselIndicatorCell.swift */,
 				FF8E2F682B5B848700F880CE /* HomeRecommendationsSectionCell.swift */,
 				FF8E2F6A2B5B84DA00F880CE /* HomeFinancialSectionCell.swift */,
 				FF8E2F6C2B5B850300F880CE /* HomeSuggestionsSectionCell.swift */,
@@ -168,6 +176,7 @@
 			children = (
 				FFBE324A2B57C538005618B0 /* Extensions.swift */,
 				FF90742A2B5B9CBD0046985D /* Service.swift */,
+				FFE2677D2B638375004DB43B /* CustomCollectionViewFlowLayout.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -246,6 +255,7 @@
 				FF52397B2B5E42D100A64AB8 /* HomeProductServiceTabCell.swift in Sources */,
 				FFBE32482B57B8F8005618B0 /* HomeView.swift in Sources */,
 				FFBE32452B57AFB4005618B0 /* TabBarViewController.swift in Sources */,
+				FF375E672B624C6800780030 /* HomeCarouselBodyCell.swift in Sources */,
 				FFBE322B2B57A9BB005618B0 /* HomeViewController.swift in Sources */,
 				FFBE32412B57AF54005618B0 /* InboxViewController.swift in Sources */,
 				FF3674892B5B764E00C78375 /* ProductService.swift in Sources */,
@@ -256,6 +266,7 @@
 				FFBE324B2B57C538005618B0 /* Extensions.swift in Sources */,
 				FF8E2F632B5B824F00F880CE /* HomeBodyContainerCell.swift in Sources */,
 				FF8E2F652B5B82CD00F880CE /* HomeProductServicesSectionCell.swift in Sources */,
+				FF375E692B62501800780030 /* HomeCarouselIndicatorCell.swift in Sources */,
 				FF46C7D12B5F65D1007BD415 /* HomeHeaderView.swift in Sources */,
 				FF8E2F692B5B848700F880CE /* HomeRecommendationsSectionCell.swift in Sources */,
 				FFBE323F2B57AF34005618B0 /* PaymentViewController.swift in Sources */,
@@ -264,6 +275,7 @@
 				FF5239792B5E12F500A64AB8 /* HomeProductServiceCell.swift in Sources */,
 				FFBE32272B57A9BB005618B0 /* AppDelegate.swift in Sources */,
 				FF8E2F672B5B83ED00F880CE /* HomeBannersSectionCell.swift in Sources */,
+				FFE2677E2B638375004DB43B /* CustomCollectionViewFlowLayout.swift in Sources */,
 				FFBE32292B57A9BB005618B0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
