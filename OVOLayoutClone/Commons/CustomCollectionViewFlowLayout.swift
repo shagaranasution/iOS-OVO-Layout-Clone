@@ -23,13 +23,18 @@ class CustomCollectionViewFlowLayout: UICollectionViewFlowLayout {
         let approximatePage = collectionView.contentOffset.x/pageWidth
         
         // Determine the current page based on velocity.
-        let currentPage = velocity.x == 0 ? round(approximatePage) : (velocity.x < 0.0 ? floor(approximatePage) : ceil(approximatePage))
+        let currentPage =
+        if velocity.x == 0 { round(approximatePage) }
+        else if velocity.x < 0.0 { floor(approximatePage) }
+        else { ceil(approximatePage) }
         
         // Create custom flickVelocity.
         let flickVelocity = velocity.x * 0.3
         
         // Check how many pages the user flicked, if <= 1 then flickedPages should return 0.
-        let flickedPages = (abs(round(flickVelocity)) <= 1) ? 0 : round(flickVelocity)
+        let flickedPages: CGFloat =
+        if abs(round(flickVelocity)) <= 1.0 { 0.0 }
+        else { round(flickVelocity) }
         
         // Calculate newHorizontalOffset.
         let newHorizontalOffset = ((currentPage + flickedPages) * pageWidth) - collectionView.contentInset.left
