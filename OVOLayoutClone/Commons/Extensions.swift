@@ -106,7 +106,7 @@ extension UIColor {
     
     public static let purpleOVOMain = UIColor(r: 76, g: 0, b: 126, a: 1)
     public static let purpleOVOMain01 = UIColor(r: 76, g: 0, b: 126, a: 0.1)
-
+    
     public static let blueSmoked = UIColor(r: 224, g: 229, b: 255, a: 1)
     
     public static let white05 = UIColor(r: 255, g: 255, b: 255, a: 0.5)
@@ -117,7 +117,7 @@ extension UIImage {
         let pixel = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
         
         UIGraphicsBeginImageContext(pixel.size)
-       
+        
         defer {
             UIGraphicsEndImageContext()
         }
