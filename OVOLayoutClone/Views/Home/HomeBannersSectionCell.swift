@@ -23,14 +23,6 @@ final class HomeBannersSectionCell: UITableViewCell {
     
     // MARK: - UI
     
-    private lazy var view: UIView = {
-        let view = UIView()
-        view.backgroundColor = .green
-        view.clipsToBounds = true
-        
-        return view
-    }()
-    
     private lazy var carouselBodiesCollectionView: UICollectionView = {
         let layout = CustomCollectionViewFlowLayout()
         layout.minimumInteritemSpacing = itemSpacing
