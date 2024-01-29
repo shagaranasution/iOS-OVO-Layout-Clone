@@ -151,13 +151,13 @@ extension HomeBodyContainerCell: UITableViewDelegate, UITableViewDataSource  {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
-        headerView.backgroundColor = .ovoSecondaryBackground
+        headerView.backgroundColor = section == 0 ? .white : .ovoSecondaryBackground
         
         return headerView
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return section == 0 ? 0 : 8
+        return 8
     }
 
 }
