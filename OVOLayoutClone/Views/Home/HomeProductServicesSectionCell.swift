@@ -94,7 +94,7 @@ final class HomeProductServicesSectionCell: UITableViewCell {
     private func addConstraints() {
         NSLayoutConstraint.activate([
             tabCollectionView.heightAnchor.constraint(equalToConstant: 36),
-            tabCollectionView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
+            tabCollectionView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
             tabCollectionView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0),
             tabCollectionView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -0),
             
