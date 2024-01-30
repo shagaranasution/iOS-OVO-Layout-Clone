@@ -126,9 +126,6 @@ extension HomeSuggestionsSectionCell: UICollectionViewDelegate, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width: CGFloat = (collectionView.frame.size.width - itemSpacing - collectionViewInset - collectionViewInset) / 2
-        let height = (width * 0.4) + 16 + 46 + 14 + 12 + 8 + 16 + 16
-        
         return CGSize(
             width: itemWidth,
             height: itemHeight
