@@ -8,6 +8,7 @@
 import Foundation
 
 struct Recommendation: Codable {
+    let id: String
     let service: String
     let subtitle: String
     let brand: String

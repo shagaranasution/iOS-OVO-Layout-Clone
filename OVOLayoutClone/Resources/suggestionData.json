@@ -1,0 +1,30 @@
+[
+    {
+        "id": "s-0001",
+        "title": "Pusat Bantuan",
+        "subtitle": "Punya kendala atau pertanyaan terkait OVO? kamu bisa kirim di sini",
+        "image": "carousel_image.jpg",
+        "linkText": "Lihat Bantuan"
+    },
+    {
+        "id": "s-0002",
+        "title": "Promo Voucher Favorit",
+        "subtitle": "Yuk cek berbagai promo menarik di aplikasi OVO sekarang!",
+        "image": "carousel_image.jpg",
+        "linkText": "Cek di sini!"
+    },
+    {
+        "id": "s-0003",
+        "title": "Cerdas Finansial",
+        "subtitle": "Yuk melek finansial bersama OVO",
+        "image": "carousel_image.jpg",
+        "linkText": "Klik di Sini!"
+    },
+    {
+        "id": "s-0004",
+        "title": "Gaya Hidup Sehat",
+        "subtitle": "5 Manfaat Bersepeda di Tengah Kota",
+        "image": "carousel_image.jpg",
+        "linkText": "Cek di sini!"
+    }
+]
