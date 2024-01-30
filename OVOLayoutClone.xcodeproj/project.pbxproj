@@ -10,6 +10,7 @@
 		FF3674892B5B764E00C78375 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3674882B5B764E00C78375 /* ProductService.swift */; };
 		FF375E672B624C6800780030 /* HomeCarouselBodyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF375E662B624C6800780030 /* HomeCarouselBodyCell.swift */; };
 		FF375E692B62501800780030 /* HomeCarouselIndicatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF375E682B62501800780030 /* HomeCarouselIndicatorCell.swift */; };
+		FF3904312B68A8B2001CBE82 /* HomeFinancialCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3904302B68A8B2001CBE82 /* HomeFinancialCardView.swift */; };
 		FF446A982B674521004DC347 /* HomeRecommendationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF446A972B674521004DC347 /* HomeRecommendationCell.swift */; };
 		FF446A9A2B674C47004DC347 /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF446A992B674C47004DC347 /* Recommendation.swift */; };
 		FF446A9C2B674CD0004DC347 /* recommendationData.json in Resources */ = {isa = PBXBuildFile; fileRef = FF446A9B2B674CD0004DC347 /* recommendationData.json */; };
@@ -44,6 +45,7 @@
 		FF3674882B5B764E00C78375 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		FF375E662B624C6800780030 /* HomeCarouselBodyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCarouselBodyCell.swift; sourceTree = "<group>"; };
 		FF375E682B62501800780030 /* HomeCarouselIndicatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCarouselIndicatorCell.swift; sourceTree = "<group>"; };
+		FF3904302B68A8B2001CBE82 /* HomeFinancialCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFinancialCardView.swift; sourceTree = "<group>"; };
 		FF446A972B674521004DC347 /* HomeRecommendationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecommendationCell.swift; sourceTree = "<group>"; };
 		FF446A992B674C47004DC347 /* Recommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
 		FF446A9B2B674CD0004DC347 /* recommendationData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recommendationData.json; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				FF8E2F682B5B848700F880CE /* HomeRecommendationsSectionCell.swift */,
 				FF446A972B674521004DC347 /* HomeRecommendationCell.swift */,
 				FF8E2F6A2B5B84DA00F880CE /* HomeFinancialSectionCell.swift */,
+				FF3904302B68A8B2001CBE82 /* HomeFinancialCardView.swift */,
 				FF8E2F6C2B5B850300F880CE /* HomeSuggestionsSectionCell.swift */,
 			);
 			path = Home;
@@ -267,6 +270,7 @@
 				FFBE32482B57B8F8005618B0 /* HomeView.swift in Sources */,
 				FFBE32452B57AFB4005618B0 /* TabBarViewController.swift in Sources */,
 				FF375E672B624C6800780030 /* HomeCarouselBodyCell.swift in Sources */,
+				FF3904312B68A8B2001CBE82 /* HomeFinancialCardView.swift in Sources */,
 				FFBE322B2B57A9BB005618B0 /* HomeViewController.swift in Sources */,
 				FFBE32412B57AF54005618B0 /* InboxViewController.swift in Sources */,
 				FF3674892B5B764E00C78375 /* ProductService.swift in Sources */,

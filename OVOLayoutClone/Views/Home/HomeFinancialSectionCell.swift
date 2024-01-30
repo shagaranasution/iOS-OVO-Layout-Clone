@@ -11,18 +11,28 @@ final class HomeFinancialSectionCell: UITableViewCell {
     
     public static let identifier = "HomeFinancialSectionCell"
     
-    private lazy var view: UIView = {
-        let view = UIView()
-        view.backgroundColor = .systemPink
-        view.clipsToBounds = true
+    // MARK: - UI
+    
+    private lazy var sectionTitleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Finansial Kamu"
+        label.textColor = .black
+        label.font = .systemFont(ofSize: 18, weight: .semibold)
+        label.translatesAutoresizingMaskIntoConstraints = false
         
-        return view
+        return label
     }()
+    
+    private lazy var cardView = HomeFinancialCardView()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        clipsToBounds = true
-        contentView.addSubview(view)
+        contentView.backgroundColor = .white
+        contentView.clipsToBounds = true
+        contentView.addSubviews(
+            sectionTitleLabel,
+            cardView
+        )
         addConstraints()
     }
     
@@ -31,7 +41,11 @@ final class HomeFinancialSectionCell: UITableViewCell {
     }
     
     private func addConstraints() {
-        view.pin(to: contentView)
-        view.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        sectionTitleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16).isActive = true
+        sectionTitleLabel.pin(to: contentView, horizontal: 16)
+        
+        cardView.pin(to: contentView, horizontal: 16)
+        cardView.topAnchor.constraint(equalTo: sectionTitleLabel.bottomAnchor, constant: 16).isActive = true
+        cardView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16).isActive = true
     }
 }

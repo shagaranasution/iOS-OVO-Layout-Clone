@@ -31,11 +31,6 @@ final class HomeHeaderView: UIView {
         gradientLayer.cornerRadius = 16
         gradientLayer.colors = [UIColor.purpleOVOMain.cgColor, UIColor.systemTeal.cgColor]
         view.layer.addSublayer(gradientLayer)
-        view.layer.shadowColor = UIColor.black.cgColor
-        view.layer.shadowOpacity = 0.2
-        view.layer.shadowOffset = CGSize(width: 0, height: 10)
-        view.layer.shadowRadius = 10
-        view.layer.shouldRasterize = true
         
         return view
     }()
@@ -140,6 +135,27 @@ final class HomeHeaderView: UIView {
     
     required init?(coder: NSCoder) {
         fatalError()
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        setupCardViewShadow()
+    }
+    
+    private func setupCardViewShadow() {
+        cardView.layer.shadowColor = UIColor.black.cgColor
+        cardView.layer.shadowOpacity = 0.2
+        cardView.layer.shadowOffset = CGSize(width: 0, height: 10)
+        cardView.layer.shadowRadius = 10
+        cardView.layer.shadowPath = UIBezierPath(
+            roundedRect: CGRect(
+                x: 0,
+                y: 0,
+                width: cardView.frame.width,
+                height: cardView.frame.height
+            ),
+            cornerRadius: 16
+        ).cgPath
     }
     
     private func setupSubviews() {
