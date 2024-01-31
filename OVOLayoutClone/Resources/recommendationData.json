@@ -1,23 +1,27 @@
 [
     {
+        "id": "r-0001",
         "service": "Top-up",
         "subtitle": "Top-up Saldo, Gratis Teh Botol?",
         "brand": "OVO",
         "image": "carousel_image.jpg"
     },
     {
+        "id": "r-0002",
         "service": "OVO PayLater",
         "subtitle": "Aktifkan di Aplikasi Grab!",
         "brand": "OVO",
         "image": "carousel_image.jpg"
     },
     {
+        "id": "r-0003",
         "service": "Jajanan",
         "subtitle": "Belanja Hemat Pake OVO",
         "brand": "OVO",
         "image": "carousel_image.jpg"
     },
     {
+        "id": "r-0004",
         "service": "Tagihan",
         "subtitle": "Contekan Promo Untuk Kamu!",
         "brand": "OVO",

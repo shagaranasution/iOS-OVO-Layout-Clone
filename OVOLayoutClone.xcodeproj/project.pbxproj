@@ -11,6 +11,9 @@
 		FF375E672B624C6800780030 /* HomeCarouselBodyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF375E662B624C6800780030 /* HomeCarouselBodyCell.swift */; };
 		FF375E692B62501800780030 /* HomeCarouselIndicatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF375E682B62501800780030 /* HomeCarouselIndicatorCell.swift */; };
 		FF3904312B68A8B2001CBE82 /* HomeFinancialCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3904302B68A8B2001CBE82 /* HomeFinancialCardView.swift */; };
+		FF3904332B68EB63001CBE82 /* HomeSuggestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3904322B68EB63001CBE82 /* HomeSuggestionCell.swift */; };
+		FF3904352B68EC4E001CBE82 /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3904342B68EC4E001CBE82 /* Suggestion.swift */; };
+		FF3904372B68EC8D001CBE82 /* suggestionData.json in Resources */ = {isa = PBXBuildFile; fileRef = FF3904362B68EC8D001CBE82 /* suggestionData.json */; };
 		FF446A982B674521004DC347 /* HomeRecommendationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF446A972B674521004DC347 /* HomeRecommendationCell.swift */; };
 		FF446A9A2B674C47004DC347 /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF446A992B674C47004DC347 /* Recommendation.swift */; };
 		FF446A9C2B674CD0004DC347 /* recommendationData.json in Resources */ = {isa = PBXBuildFile; fileRef = FF446A9B2B674CD0004DC347 /* recommendationData.json */; };
@@ -46,6 +49,9 @@
 		FF375E662B624C6800780030 /* HomeCarouselBodyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCarouselBodyCell.swift; sourceTree = "<group>"; };
 		FF375E682B62501800780030 /* HomeCarouselIndicatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCarouselIndicatorCell.swift; sourceTree = "<group>"; };
 		FF3904302B68A8B2001CBE82 /* HomeFinancialCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFinancialCardView.swift; sourceTree = "<group>"; };
+		FF3904322B68EB63001CBE82 /* HomeSuggestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSuggestionCell.swift; sourceTree = "<group>"; };
+		FF3904342B68EC4E001CBE82 /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
+		FF3904362B68EC8D001CBE82 /* suggestionData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = suggestionData.json; sourceTree = "<group>"; };
 		FF446A972B674521004DC347 /* HomeRecommendationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecommendationCell.swift; sourceTree = "<group>"; };
 		FF446A992B674C47004DC347 /* Recommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
 		FF446A9B2B674CD0004DC347 /* recommendationData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recommendationData.json; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 			children = (
 				FF3674882B5B764E00C78375 /* ProductService.swift */,
 				FF446A992B674C47004DC347 /* Recommendation.swift */,
+				FF3904342B68EC4E001CBE82 /* Suggestion.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -103,6 +110,7 @@
 			children = (
 				FF9074282B5B986D0046985D /* productServiceData.json */,
 				FF446A9B2B674CD0004DC347 /* recommendationData.json */,
+				FF3904362B68EC8D001CBE82 /* suggestionData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -179,6 +187,7 @@
 				FF8E2F6A2B5B84DA00F880CE /* HomeFinancialSectionCell.swift */,
 				FF3904302B68A8B2001CBE82 /* HomeFinancialCardView.swift */,
 				FF8E2F6C2B5B850300F880CE /* HomeSuggestionsSectionCell.swift */,
+				FF3904322B68EB63001CBE82 /* HomeSuggestionCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -253,6 +262,7 @@
 			files = (
 				FF9074292B5B986D0046985D /* productServiceData.json in Resources */,
 				FFBE32332B57A9BF005618B0 /* LaunchScreen.storyboard in Resources */,
+				FF3904372B68EC8D001CBE82 /* suggestionData.json in Resources */,
 				FF446A9C2B674CD0004DC347 /* recommendationData.json in Resources */,
 				FFBE32302B57A9BF005618B0 /* Assets.xcassets in Resources */,
 			);
@@ -287,12 +297,14 @@
 				FFBE323F2B57AF34005618B0 /* PaymentViewController.swift in Sources */,
 				FFBE32432B57AF70005618B0 /* ProfileViewController.swift in Sources */,
 				FF8E2F6B2B5B84DA00F880CE /* HomeFinancialSectionCell.swift in Sources */,
+				FF3904332B68EB63001CBE82 /* HomeSuggestionCell.swift in Sources */,
 				FF5239792B5E12F500A64AB8 /* HomeProductServiceCell.swift in Sources */,
 				FFBE32272B57A9BB005618B0 /* AppDelegate.swift in Sources */,
 				FF8E2F672B5B83ED00F880CE /* HomeBannersSectionCell.swift in Sources */,
 				FFE2677E2B638375004DB43B /* CustomCollectionViewFlowLayout.swift in Sources */,
 				FFBE32292B57A9BB005618B0 /* SceneDelegate.swift in Sources */,
 				FF446A982B674521004DC347 /* HomeRecommendationCell.swift in Sources */,
+				FF3904352B68EC4E001CBE82 /* Suggestion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

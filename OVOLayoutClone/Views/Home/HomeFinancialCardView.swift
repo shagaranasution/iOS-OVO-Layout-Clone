@@ -154,8 +154,7 @@ final class HomeFinancialCardView: UIView {
         
         footerWrapperView.pin(to: self, horizontal: 16)
         footerWrapperView.topAnchor.constraint(equalTo: horizontalDeviderView.bottomAnchor, constant: 16).isActive = true
-        footerWrapperView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16).isActive = true
-        
+        footerWrapperView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -24).isActive = true
     }
     
 }

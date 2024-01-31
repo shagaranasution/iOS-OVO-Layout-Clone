@@ -24,10 +24,11 @@ final class HomeBodyContainerCell: UITableViewCell {
         tableView.backgroundColor = .white
         tableView.isScrollEnabled = true
         tableView.separatorStyle = .none
-        tableView.contentInset.bottom = 800
+        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 800, right: 0)
         if #available(iOS 15.0, *) {
             tableView.sectionHeaderTopPadding = 0
         }
+
         tableView.register(
             HomeProductServicesSectionCell.self,
             forCellReuseIdentifier: HomeProductServicesSectionCell.identifier
