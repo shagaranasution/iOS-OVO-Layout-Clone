@@ -46,6 +46,7 @@ final class HomeSuggestionCell: UICollectionViewCell {
         let imageView = UIImageView()
         imageView.backgroundColor = .ovoSecondaryBackground
         imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         
         return imageView
@@ -91,10 +92,10 @@ final class HomeSuggestionCell: UICollectionViewCell {
     }
     
     private func addConstraints() {
-        thumbnailImageView.pin(to: contentView, horizontal: 0)
         thumbnailImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 0).isActive = true
+        thumbnailImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0).isActive = true
         thumbnailImageView.widthAnchor.constraint(equalTo: contentView.widthAnchor).isActive = true
-        thumbnailImageView.heightAnchor.constraint(equalTo: thumbnailImageView.widthAnchor, multiplier: 0.4).isActive = true
+        thumbnailImageView.heightAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 0.4).isActive = true
         
         titleLabel.pin(to: contentView, horizontal: 8)
         titleLabel.topAnchor.constraint(equalTo: thumbnailImageView.bottomAnchor, constant: 12).isActive = true

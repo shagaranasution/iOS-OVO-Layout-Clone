@@ -14,8 +14,6 @@ final class HomeView: UIView {
         tableView.backgroundColor = .blueSmoked
         tableView.showsVerticalScrollIndicator = false
         tableView.isScrollEnabled = false
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 1000
         if #available(iOS 15.0, *) {
             tableView.sectionHeaderTopPadding = 0
         }
@@ -79,7 +77,7 @@ extension HomeView: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 1240
+        return UIScreen.main.bounds.height - frame.origin.y - headerView.customHeight
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

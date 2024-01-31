@@ -97,7 +97,6 @@ final class HomeSuggestionsSectionCell: UITableViewCell {
         sectionSubitleLabel.pin(to: contentView, horizontal: 16)
         sectionSubitleLabel.topAnchor.constraint(equalTo: sectionTitleLabel.bottomAnchor, constant: 4).isActive = true
         
-        collectionView.backgroundColor = .white
         collectionView.pin(to: contentView, horizontal: 0)
         collectionView.topAnchor.constraint(equalTo: sectionSubitleLabel.bottomAnchor, constant: 16).isActive = true
         collectionView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16).isActive = true
