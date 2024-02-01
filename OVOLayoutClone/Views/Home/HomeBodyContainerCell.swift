@@ -24,10 +24,11 @@ final class HomeBodyContainerCell: UITableViewCell {
         tableView.backgroundColor = .white
         tableView.isScrollEnabled = true
         tableView.separatorStyle = .none
-        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 800, right: 0)
+        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 96, right: 0)
         if #available(iOS 15.0, *) {
             tableView.sectionHeaderTopPadding = 0
         }
+        tableView.showsVerticalScrollIndicator = false
 
         tableView.register(
             HomeProductServicesSectionCell.self,
@@ -59,7 +60,6 @@ final class HomeBodyContainerCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         clipsToBounds = true
         layer.cornerRadius = 20
-        layer.masksToBounds = true
         contentView.addSubview(tableView)
         addConstraints()
     }

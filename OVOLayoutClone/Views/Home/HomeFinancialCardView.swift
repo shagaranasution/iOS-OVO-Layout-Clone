@@ -47,6 +47,7 @@ final class HomeFinancialCardView: UIView {
         label.font = .systemFont(ofSize: 12, weight: .thin)
         label.textColor = .black
         label.numberOfLines = 2
+        label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
     }()
@@ -62,21 +63,15 @@ final class HomeFinancialCardView: UIView {
         
         button.titleLabel?.attributedText = attributedText
         button.backgroundColor = .purpleOVOMain
+        button.contentEdgeInsets = UIEdgeInsets(
+            top: 8,
+            left: 24,
+            bottom: 8,
+            right: 24
+        )
+        button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
-    }()
-    
-    private lazy var footerWrapperView: UIStackView = {
-        let view = UIStackView()
-        view.axis = .horizontal
-        view.spacing = 16
-        view.addArrangedSubviews(
-            footerLabel,
-            footerButton
-        )
-        view.translatesAutoresizingMaskIntoConstraints = false
-        
-        return view
     }()
     
     private lazy var horizontalDeviderView: UIView = {
@@ -102,7 +97,7 @@ final class HomeFinancialCardView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         setupContainerShadow()
-        footerButton.layer.cornerRadius = footerWrapperView.frame.size.height / 2
+        footerButton.layer.cornerRadius = footerButton.bounds.height / 2
     }
     
     private func setupContainerUI() {
@@ -135,7 +130,8 @@ final class HomeFinancialCardView: UIView {
             investLabel,
             verticalBarView,
             horizontalDeviderView,
-            footerWrapperView
+            footerLabel,
+            footerButton
         )
     }
     
@@ -152,9 +148,13 @@ final class HomeFinancialCardView: UIView {
         horizontalDeviderView.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
         horizontalDeviderView.topAnchor.constraint(equalTo: verticalBarView.bottomAnchor, constant: 16).isActive = true
         
-        footerWrapperView.pin(to: self, horizontal: 16)
-        footerWrapperView.topAnchor.constraint(equalTo: horizontalDeviderView.bottomAnchor, constant: 16).isActive = true
-        footerWrapperView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -24).isActive = true
+        footerLabel.topAnchor.constraint(equalTo: horizontalDeviderView.bottomAnchor, constant: 24).isActive = true
+        footerLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
+        footerLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -24).isActive = true
+        
+        footerButton.centerYAnchor.constraint(equalTo: footerLabel.centerYAnchor).isActive = true
+        footerButton.leadingAnchor.constraint(equalTo: footerLabel.trailingAnchor, constant: 16).isActive = true
+        footerButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
     }
     
 }

@@ -56,7 +56,7 @@ final class HomeProductServicesSectionCell: UITableViewCell {
             width: (screenWidth - 32 - 24 ) / 4,
             height: 80
         )
-        
+
         let collectionView = UICollectionView(
             frame: .zero,
             collectionViewLayout: layout
@@ -98,8 +98,8 @@ final class HomeProductServicesSectionCell: UITableViewCell {
             tabCollectionView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0),
             tabCollectionView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -0),
             
-            bodyCollectionView.heightAnchor.constraint(equalToConstant: 200),
-            bodyCollectionView.topAnchor.constraint(equalTo: tabCollectionView.bottomAnchor, constant: 32),
+            bodyCollectionView.heightAnchor.constraint(equalToConstant: 168),
+            bodyCollectionView.topAnchor.constraint(equalTo: tabCollectionView.bottomAnchor, constant: 16),
             bodyCollectionView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0),
             bodyCollectionView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -0),
             bodyCollectionView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16)

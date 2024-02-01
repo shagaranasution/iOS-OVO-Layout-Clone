@@ -69,6 +69,7 @@ final class HomeProductServiceCell: UICollectionViewCell {
         fatalError()
     }
     
+    
     private func addConstraints() {
         NSLayoutConstraint.activate([
             imageView.widthAnchor.constraint(equalToConstant: imageViewSize),
@@ -76,9 +77,8 @@ final class HomeProductServiceCell: UICollectionViewCell {
             imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
             imageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             
-            label.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 8),
-            label.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 4),
-            label.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -4),
+            label.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 4),
+            label.widthAnchor.constraint(equalToConstant: contentView.frame.size.width),
         ])
     }
     
